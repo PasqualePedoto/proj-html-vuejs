@@ -1,9 +1,21 @@
 <template>
   <section id="jumbotron">
     <div class="jumbo">
-      <div class="container">
-        <div class="row">
-          <div class="col"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col h-100">
+            <!-- Center Content -->
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <div class="mb-5 text-center">
+                <!-- Sub-Title -->
+                <h3 class="text-white">Commance Business</h3>
+                <!-- Title -->
+                <h1 class="text-white">Distant Mentoring Program</h1>
+                <!-- Button -->
+                <BaseButton text="Download free guidebook" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -11,8 +23,10 @@
 </template>
 
 <script>
+import BaseButton from "./BaseButton.vue";
 export default {
   name: "BaseJumbotron",
+  components: { BaseButton },
 };
 </script>
 
