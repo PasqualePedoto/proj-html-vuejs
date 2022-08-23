@@ -14,7 +14,11 @@
               <p>{{ allInfo.paragraph }}</p>
             </div>
             <!-- Image -->
-            <div class="col-8"></div>
+            <div class="col-8">
+              <figure class="m-0">
+                <img :src="allInfo.image" alt="photo" />
+              </figure>
+            </div>
           </div>
         </div>
         <div class="col-12 text-center d-flex align-items-center justify-content-center" v-if="allInfo.section === 'everithing-max-coach'">
@@ -24,7 +28,6 @@
     </div>
   </section>
 </template>
-
 <script>
 import BaseLessonData from "../components/BaseLessonData.vue";
 
@@ -36,7 +39,7 @@ export default {
   props: {
     section: String,
     allInfo: Object,
-    direction: String,
+    direction: Number,
     lessonsData: Array,
   },
 };
