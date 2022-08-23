@@ -8,8 +8,11 @@
             <!-- Header links -->
             <div class="d-flex align-items-center justify-content-center">
               <ul class="d-flex align-items-center justify-content-center m-0">
-                <li v-for="(link, i) in headerLinks" :key="i" class="me-4">
-                  <a href="#">{{ link }}</a>
+                <li v-for="(link, i) in headerLinks" :key="i" class="me-3">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="#" class="me-1">{{ link }}</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
                 </li>
               </ul>
             </div>
