@@ -33,6 +33,7 @@ export default {
       sectionsInfo: [
         {
           section: "everithing-max-coach",
+          female: `${require("./assets/images/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg")}`,
           image: `${require("./assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg")}`,
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "EVERYTHING IN MAXCOACH",

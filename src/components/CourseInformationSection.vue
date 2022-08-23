@@ -18,6 +18,7 @@
               <figure class="m-0 position-relative ps-5 pe-5">
                 <img :src="allInfo.image" alt="photo" />
                 <img :src="allInfo.imgYoutube" class="youtube-logo" v-if="allInfo.section === 'how-we-work'" />
+                <img :src="allInfo.female" alt="" class="female" v-if="allInfo.section === 'everithing-max-coach'" />
               </figure>
             </div>
           </div>
@@ -68,6 +69,15 @@ section {
 
       width: 80px;
       height: 50px;
+    }
+
+    .female {
+      position: absolute;
+      left: 85%;
+      bottom: 80%;
+
+      width: 110px;
+      height: 110px;
     }
   }
 }
