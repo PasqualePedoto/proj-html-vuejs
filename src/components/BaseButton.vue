@@ -14,10 +14,17 @@ export default {
 <style lang="scss" scoped>
 // Modelliamo il button
 button {
+  // Colori del testo e del bg
   background-color: white;
   color: #2fab97;
 
-  padding: 12px;
+  // Spaziature
+  border: 0;
+  padding: 16px;
+
+  // Dimensione del font
+  font-size: 12px;
+  font-weight: bold;
 
   //   transition: background-color 0.025s linear, color 0.5s linear;
 }
