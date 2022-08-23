@@ -49,7 +49,7 @@ export default {
         },
         {
           section: "testimonials",
-          image: `${require("./assets/images/rtl-demo-preview.jpg")}`,
+          image: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
           subtitle: "TESTIMONIALS",
           title: "Why Do Peaple *Hearts* Us?",
           paragraph:

@@ -5,7 +5,7 @@
         <!-- Text -->
         <div class="col-12">
           <div class="row">
-            <div class="col-4 flex-shrink-0" :class="{ 'order-1': direction % 2 === 0 }">
+            <div class="col-4 flex-shrink-0 info" :class="{ 'order-1': direction % 2 === 0 }">
               <!-- Subtitle -->
               <h6>{{ allInfo.subtitle }}</h6>
               <!-- Title -->
@@ -47,5 +47,17 @@ export default {
 
 <style lang="scss" scoped>
 section {
+  // Flexiamo l'area delle info in modo talòe da disporle centralmente
+  // rispetto alla foto di fianco
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  // Diamo un'altezza fissa alle figure di fianco alle descrizioni
+  figure {
+    height: 400px;
+  }
 }
 </style>
