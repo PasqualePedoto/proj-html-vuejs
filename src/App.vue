@@ -1,11 +1,21 @@
 <template>
-  <div>ciao</div>
+  <BaseHeader :headerLinks="headerLinks" />
 </template>
 
 <script>
+import BaseHeader from "./components/BaseHeader.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    BaseHeader,
+  },
+  data() {
+    return {
+      headerLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+    };
+  },
+  computed: {},
+  methods: {},
 };
 </script>
 
