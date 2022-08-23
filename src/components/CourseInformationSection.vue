@@ -15,8 +15,9 @@
             </div>
             <!-- Image -->
             <div class="col-8">
-              <figure class="m-0">
+              <figure class="m-0 position-relative ps-5 pe-5">
                 <img :src="allInfo.image" alt="photo" />
+                <img :src="allInfo.imgYoutube" class="youtube-logo" v-if="allInfo.section === 'how-we-work'" />
               </figure>
             </div>
           </div>
@@ -58,6 +59,16 @@ section {
   // Diamo un'altezza fissa alle figure di fianco alle descrizioni
   figure {
     height: 400px;
+
+    .youtube-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 80px;
+      height: 50px;
+    }
   }
 }
 </style>

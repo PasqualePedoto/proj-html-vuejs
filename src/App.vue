@@ -34,6 +34,7 @@ export default {
         {
           section: "everithing-max-coach",
           image: `${require("./assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "EVERYTHING IN MAXCOACH",
           title: "Learn about our Work Culture at MaxCoach",
           paragraph:
@@ -42,6 +43,7 @@ export default {
         {
           section: "how-we-work",
           image: `${require("./assets/images/stock-full-hd-11-670x450.jpg")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "HOW WE WORK",
           title: "Upgrade Your Skills Upgrade Your Life",
           paragraph:
@@ -50,6 +52,7 @@ export default {
         {
           section: "testimonials",
           image: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "TESTIMONIALS",
           title: "Why Do Peaple *Hearts* Us?",
           paragraph:
@@ -58,6 +61,7 @@ export default {
         {
           section: "free-guide",
           image: `${require("./assets/images/home-3-team-image-300x278.png")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "EVERYTHING IN MAXCOACH",
           title: "We're Here To Transform You!",
           paragraph:
