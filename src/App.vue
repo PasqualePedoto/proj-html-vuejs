@@ -1,22 +1,65 @@
 <template>
   <div>
     <BaseHeader :headerLinks="headerLinks" />
-    <BaseJumbotron />
+    <BaseJumbotron :info="jumboInformations" />
+    <BaseMain :main-info="sectionsInfo" />
   </div>
 </template>
 
 <script>
 import BaseHeader from "./components/BaseHeader.vue";
 import BaseJumbotron from "./components/BaseJumbotron.vue";
+import BaseMain from "./components/BaseMain.vue";
+
 export default {
   name: "App",
   components: {
     BaseHeader,
     BaseJumbotron,
+    BaseMain,
   },
   data() {
     return {
+      // Links nell'header
       headerLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+
+      // Oggetto contenente le info del jumbotron
+      jumboInformations: {
+        subtitle: "Commance Business",
+        title: "Distant Mentoring Program",
+        buttonText: "Download free guidebook",
+      },
+
+      sectionsInfo: [
+        {
+          section: "everithing-max-coach",
+          subtitle: "EVERYTHING IN MAXCOACH",
+          title: "Learn about our Work Culture at MaxCoach",
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+        {
+          section: "how-we-work",
+          subtitle: "HOW WE WORK",
+          title: "Upgrade Your Skills Upgrade Your Life",
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+        {
+          section: "testimonials",
+          subtitle: "TESTIMONIALS",
+          title: "Why Do Peaple *Hearts* Us?",
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+        {
+          section: "free-guide",
+          subtitle: "EVERYTHING IN MAXCOACH",
+          title: "We're Here To Transform You!",
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+      ],
 
       // Palette dei colori
       white: "#ffffff",

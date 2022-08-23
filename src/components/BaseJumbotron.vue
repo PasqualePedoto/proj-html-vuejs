@@ -8,11 +8,11 @@
             <div class="d-flex align-items-center justify-content-center h-100">
               <div class="mb-5 text-center">
                 <!-- Sub-Title -->
-                <h3 class="text-white">Commance Business</h3>
+                <h3 class="text-white">{{ info.subtitle }}</h3>
                 <!-- Title -->
-                <h1 class="text-white">Distant Mentoring Program</h1>
+                <h1 class="text-white">{{ info.title }}</h1>
                 <!-- Button -->
-                <BaseButton text="Download free guidebook" />
+                <BaseButton :text="info.buttonText" />
               </div>
             </div>
           </div>
@@ -27,6 +27,9 @@ import BaseButton from "./BaseButton.vue";
 export default {
   name: "BaseJumbotron",
   components: { BaseButton },
+  props: {
+    info: Object,
+  },
 };
 </script>
 
