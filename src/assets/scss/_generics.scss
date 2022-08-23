@@ -1,0 +1,28 @@
+// GENERICS
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//Eliminiamo il pallino a fianco ad ogni li
+
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+
+// Facciamo in modo che le immagini occupino
+// il 100% del contenitore che lo contiene
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+// Settiamo il dexcoration del link
+a {
+  text-decoration: none;
+  color: black;
+}
