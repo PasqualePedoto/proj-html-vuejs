@@ -23,7 +23,7 @@
             <nav class="d-flex align-items-center justify-content-center">
               <a href="#"><i class="fa-solid fa-cart-shopping me-3"></i></a>
               <a href="#"><i class="fa-regular fa-circle-user me-3"></i></a>
-              <BaseSearchbar />
+              <BaseSearchbar placeholder="Search..." />
             </nav>
           </div>
         </div>
