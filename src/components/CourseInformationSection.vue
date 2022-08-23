@@ -14,30 +14,35 @@
               <p>{{ allInfo.paragraph }}</p>
             </div>
             <!-- Image -->
-            <div class="col-8 cicc"></div>
+            <div class="col-8"></div>
           </div>
         </div>
-        <div class="col-12" v-if="allInfo.section === 'everithing-max-coach'"></div>
+        <div class="col-12 text-center d-flex align-items-center justify-content-center" v-if="allInfo.section === 'everithing-max-coach'">
+          <BaseLessonData v-for="(info, i) in lessonsData" :key="i" class="data-lesson" :info="info" />
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import BaseLessonData from "../components/BaseLessonData.vue";
+
 export default {
   name: "CourseInformationSection",
+  components: {
+    BaseLessonData,
+  },
   props: {
     section: String,
     allInfo: Object,
     direction: String,
+    lessonsData: Array,
   },
 };
 </script>
 
 <style lang="scss" scoped>
 section {
-  .cicc {
-    background-color: red;
-  }
 }
 </style>

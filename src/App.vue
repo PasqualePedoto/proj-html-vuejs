@@ -2,7 +2,7 @@
   <div>
     <BaseHeader :headerLinks="headerLinks" />
     <BaseJumbotron :info="jumboInformations" />
-    <BaseMain :main-info="sectionsInfo" />
+    <BaseMain :main-info="sectionsInfo" :lessons-data="lessonsData" />
   </div>
 </template>
 
@@ -58,6 +58,21 @@ export default {
           title: "We're Here To Transform You!",
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+      ],
+
+      lessonsData: [
+        {
+          data: "129+",
+          description: "ENROLLED LEARNERS",
+        },
+        {
+          data: "80",
+          description: "FINISHED SESSIONS",
+        },
+        {
+          data: "4%",
+          description: "SATISFACTION RATE",
         },
       ],
 
