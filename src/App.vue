@@ -2,7 +2,7 @@
   <div class="position-relative">
     <BaseHeader :headerLinks="headerLinks" class="header-position" />
     <BaseJumbotron :info="jumboInformations" />
-    <BaseMain :main-info="sectionsInfo" :lessons-data="lessonsData" />
+    <BaseMain :main-info="sectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" />
   </div>
 </template>
 
@@ -86,6 +86,29 @@ export default {
         {
           data: "4%",
           description: "SATISFACTION RATE",
+        },
+      ],
+
+      graficImage: [
+        {
+          image: "maxcoach-shape-01",
+          src: `${require("./assets/images/maxcoach-shape-01.png")}`,
+        },
+        {
+          image: "maxcoach-shape-02",
+          src: `${require("./assets/images/maxcoach-shape-02.png")}`,
+        },
+        {
+          image: "maxcoach-shape-05",
+          src: `${require("./assets/images/maxcoach-shape-05-100x100.png")}`,
+        },
+        {
+          image: "maxcoach-shape-07",
+          src: `${require("./assets/images/maxcoach-shape-07.png")}`,
+        },
+        {
+          image: "svg-0",
+          src: `${require("./assets/svg/svg-0.svg")}`,
         },
       ],
 

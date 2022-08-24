@@ -4,8 +4,8 @@
       <div class="row">
         <!-- Text -->
         <div class="col-12">
-          <div class="row">
-            <div class="col-4 flex-shrink-0 info" :class="{ 'order-1': direction % 2 === 0 }">
+          <div class="row pt-5">
+            <div class="col-4 flex-shrink-0 info" :class="{ 'order-1': direction % 2 === 1 }">
               <!-- Subtitle -->
               <h6>{{ allInfo.subtitle }}</h6>
               <!-- Title -->
@@ -17,11 +17,43 @@
             </div>
             <!-- Image -->
             <div class="col-8">
-              <figure class="m-0 position-relative ps-5 pe-5 image">
-                <img :src="allInfo.image" alt="photo" />
-                <img :src="allInfo.imgYoutube" class="youtube-logo" v-if="allInfo.section === 'how-we-work'" />
-                <img :src="allInfo.female" alt="" class="girl" v-if="allInfo.section === 'everithing-max-coach'" />
-              </figure>
+              <div class="m-0 position-relative ps-5 pe-5 image block-image">
+                <!-- ******************* -->
+                <!-- Immagine principale della sezione -->
+                <!-- ******************* -->
+                <figure>
+                  <img :src="allInfo.image" alt="photo" />
+                </figure>
+                <!-- * Effetti grafici sull'immagine principale -->
+                <!-- Circle -->
+                <figure class="grafic-image blue-ring">
+                  <img :src="grafic[1].src" :alt="grafic[1].image" />
+                </figure>
+                <!-- Square: In base al posizionamento del testo cambiamo il posizionamento della grafica -->
+                <figure class="grafic-image left-square" :class="{ 'right-square': direction % 2 === 1 }">
+                  <img :src="grafic[3].src" :alt="grafic[3].image" />
+                </figure>
+                <!-- Hexagon: In base al posizionamento del testo cambiamo il posizionamento della grafica -->
+                <figure class="grafic-image right-hexagon" :class="{ 'left-hexagon': direction % 2 === 1 }">
+                  <img :src="grafic[2].src" :alt="grafic[2].image" />
+                </figure>
+                <!-- Gray Cloud: In base alla sezione cambiamo il posizionamento della nuvoletta -->
+                <figure class="grafic-image cloud gray-cloud" v-if="allInfo.section === 'how-we-work'">
+                  <img :src="grafic[4].src" :alt="grafic[4].image" />
+                </figure>
+                <!-- Green Cloud: In base alla sezione cambiamo il posizionamento della nuvoletta -->
+                <figure class="grafic-image cloud green-cloud" v-if="allInfo.section === 'free-guide'">
+                  <img :src="grafic[4].src" :alt="grafic[4].image" />
+                </figure>
+                <!-- Logo di You-Tube visibile solo in una sezione -->
+                <figure class="youtube-logo">
+                  <img :src="allInfo.imgYoutube" v-if="allInfo.section === 'how-we-work'" />
+                </figure>
+                <!-- Immagine di una donna visibile solo in una sezione -->
+                <figure class="girl">
+                  <img :src="allInfo.female" alt="" v-if="allInfo.section === 'everithing-max-coach'" />
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -48,6 +80,7 @@ export default {
     allInfo: Object,
     direction: Number,
     lessonsData: Array,
+    grafic: Array,
   },
 };
 </script>
@@ -64,8 +97,13 @@ section {
   }
 
   // Diamo un'altezza fissa alle figure di fianco alle descrizioni
-  figure {
+  .block-image {
     height: 400px;
+
+    // Facciamo in modo che il figure segua il suo contenitore in altezza
+    figure {
+      height: 100%;
+    }
 
     // Fissiamo il logo di youtube al centro dell'immagine ma solo della
     // sezione 'How we work'
@@ -77,6 +115,84 @@ section {
 
       width: 80px;
       height: 50px;
+    }
+
+    // ***************
+    // GRAFICA
+    // ***************
+
+    .grafic-image {
+      // Dimensione degli elementi di grafica
+      width: 100px;
+      height: 100px;
+
+      position: absolute;
+    }
+
+    //***************** */
+    // Modelliamo l'anello blu e verde
+    //***************** */
+
+    .grafic-image.blue-ring {
+      z-index: 3;
+
+      top: 90%;
+      left: 70%;
+    }
+
+    //***************** */
+    // Modelliamo i quadrati di puntini
+    //***************** */
+
+    // QUADRATO DI SINISTRA
+    .grafic-image.left-square {
+      z-index: -1;
+
+      top: 85%;
+      left: 0;
+    }
+
+    // QUADRATO DI DESTRA
+    .grafic-image.right-square {
+      z-index: -1;
+
+      top: 85%;
+      left: 0;
+    }
+
+    //***************** */
+    // Modelliamo gli esagoni di puntini
+    //***************** */
+
+    // ESAGONO DI DESTRA
+    .grafic-image.right-hexagon {
+      z-index: -1;
+
+      left: 80%;
+      bottom: 90%;
+    }
+
+    // ESAGONO DI SINISTRA
+    .grafic-image.left-hexagon {
+      z-index: -1;
+
+      top: 15%;
+      left: 15%;
+    }
+
+    //***************** */
+    // Modelliamo le nuvolette
+    //***************** */
+
+    .grafic-image.cloud {
+      z-index: -1;
+
+      bottom: 83%;
+      right: 87%;
+    }
+
+    .grafic-image.cloud.gray-cloud {
+      filter: opacity(0.1);
     }
 
     // Fissiamo l'immagine della donna al centro dell'immagine ma solo della

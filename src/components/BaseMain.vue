@@ -1,7 +1,7 @@
 <template>
   <main>
     <!-- All sections -->
-    <CourseInformationSection v-for="(info, i) in mainInfo" :key="i" :section="info.section" :allInfo="info" :direction="i" :lessons-data="lessonsData" />
+    <CourseInformationSection :grafic="grafic" v-for="(info, i) in mainInfo" :key="i" :section="info.section" :allInfo="info" :direction="i" :lessons-data="lessonsData" />
   </main>
 </template>
 
@@ -13,6 +13,7 @@ export default {
   props: {
     mainInfo: Array,
     lessonsData: Array,
+    grafic: Array,
   },
 };
 </script>
