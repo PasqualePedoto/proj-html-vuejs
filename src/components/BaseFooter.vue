@@ -9,7 +9,7 @@
           <!-- Lista di voci -->
           <ul>
             <li v-for="(voice, i) in footerVoices[0].voice" :key="i">
-              {{ voice }}
+              <a href="#">{{ voice }}</a>
             </li>
           </ul>
         </div>
@@ -22,7 +22,7 @@
               <!-- Lista di voci -->
               <ul class="d-flex flex-column flex-wrap flex-grow-1">
                 <li v-for="(voice, i) in footerVoices[1].voice" :key="i">
-                  {{ voice }}
+                  <a href="#">{{ voice }}</a>
                 </li>
               </ul>
             </div>
@@ -32,7 +32,7 @@
               <!-- Lista di voci -->
               <ul>
                 <li v-for="(voice, i) in footerVoices[2].voice" :key="i">
-                  {{ voice }}
+                  <a href="#"> {{ voice }}</a>
                 </li>
               </ul>
             </div>
@@ -69,11 +69,14 @@ footer {
     // Altezza fissa così da creare l'effetto richiesto delle voci della
     // seconda lista di voci
     max-height: 120px;
+
     li {
-      // Definiamo i colori degli li
-      color: grey;
       margin: 5px 0;
-      font-size: 12px;
+      a {
+        // Definiamo i colori degli li
+        color: grey;
+        font-size: 12px;
+      }
     }
   }
 

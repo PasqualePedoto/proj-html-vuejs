@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-items-center justify-content-center">
+  <div class="d-flex align-items-center justify-content-center mb-5">
     <div class="text-center">
       <!-- Title -->
       <div>
