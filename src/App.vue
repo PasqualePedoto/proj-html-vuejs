@@ -38,6 +38,7 @@ export default {
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "EVERYTHING IN MAXCOACH",
           title: "Learn about our Work Culture at MaxCoach",
+          link: "Have questions? Get Free Guide",
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },
@@ -47,6 +48,7 @@ export default {
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "HOW WE WORK",
           title: "Upgrade Your Skills Upgrade Your Life",
+          link: "Download free guidebook",
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },
@@ -56,6 +58,7 @@ export default {
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "TESTIMONIALS",
           title: "Why Do Peaple *Hearts* Us?",
+          link: "View all",
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },
@@ -65,6 +68,7 @@ export default {
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "EVERYTHING IN MAXCOACH",
           title: "We're Here To Transform You!",
+          link: "Get Free Guide",
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },

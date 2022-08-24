@@ -12,6 +12,12 @@
               <h1>{{ allInfo.title }}</h1>
               <!-- Paragraph -->
               <p>{{ allInfo.paragraph }}</p>
+              <!-- Link -->
+              <div>
+                <a href="#"
+                  ><div class="link">{{ allInfo.link }}<i class="ms-2 fa-solid fa-arrow-right"></i></div
+                ></a>
+              </div>
             </div>
             <!-- Image -->
             <div class="col-8">
@@ -23,6 +29,7 @@
             </div>
           </div>
         </div>
+        <!-- Dati delle lezioni che verranno visualizzati solo in una sezione -->
         <div class="col-12 text-center d-flex align-items-center justify-content-center" v-if="allInfo.section === 'everithing-max-coach'">
           <BaseLessonData v-for="(info, i) in lessonsData" :key="i" class="data-lesson" :info="info" />
         </div>
@@ -52,9 +59,33 @@ section {
   // Flexiamo l'area delle info in modo talòe da disporle centralmente
   // rispetto alla foto di fianco
   .info {
+    // Utilizato flex per disporre al meglio i contenuti testuali
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .link {
+      // Cambiamo il display in modo tale da by-passare
+      // lo stretch dei flex items
+      display: inline-block;
+
+      // Colore del testo
+      color: #2fab97;
+
+      // Box shadow
+      box-shadow: 1px 2px 2px #dedede;
+
+      padding: 0 2px;
+
+      // Transitions sui colori
+      transition: background-color 0.2s linear, color 0.2s linear;
+    }
+
+    // Effetto di hover sui links
+    a:hover .link {
+      background-color: #2fab97;
+      color: white;
+    }
   }
 
   // Diamo un'altezza fissa alle figure di fianco alle descrizioni
