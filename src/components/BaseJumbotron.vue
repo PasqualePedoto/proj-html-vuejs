@@ -1,6 +1,6 @@
 <template>
   <section id="jumbotron">
-    <div class="jumbo">
+    <div class="jumbo position-relative">
       <div class="container h-100">
         <div class="row h-100">
           <div class="col h-100">
@@ -13,6 +13,13 @@
                 <h1 class="text-white">{{ info.title }}</h1>
                 <!-- Button -->
                 <BaseButton :text="info.buttonText" color="bg-white green" />
+                <!-- Barra degli strumenti posta in position absolute -->
+                <div id="settings" class="d-flex flex-column">
+                  <i class="fa-solid fa-ruler-combined mb-2"></i>
+                  <i class="fa-solid fa-earth-africa mb-2"></i>
+                  <i class="fa-solid fa-book mb-2"></i>
+                  <i class="fa-solid fa-cart-shopping mb-2"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -42,5 +49,15 @@ export default {
 
   width: 100%;
   height: 700px;
+
+  #settings {
+    background-color: #fff;
+
+    position: absolute;
+    top: 20%;
+    right: 0;
+
+    padding: 5px;
+  }
 }
 </style>
