@@ -10,7 +10,7 @@
     <!-- Second area -->
     <CourseInformationSection :grafic="grafic" v-for="(info, i) in secondInfo" :key="i + 'r'" :section="info.section" :allInfo="info" :direction="i" :lessons-data="lessonsData" />
     <div class="gray-bg">
-      <TheOurBlogs />
+      <TheOurBlogs :blogs-card="blogsCard" />
     </div>
   </main>
 </template>
@@ -28,6 +28,7 @@ export default {
     lessonsData: Array,
     grafic: Array,
     courses: Array,
+    blogsCard: Array,
   },
 };
 </script>

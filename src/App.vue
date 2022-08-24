@@ -2,7 +2,7 @@
   <div class="position-relative">
     <BaseHeader :headerLinks="headerLinks" class="header-position" />
     <BaseJumbotron :info="jumboInformations" />
-    <BaseMain :first-info="firstSectionsInfo" :second-info="secondSectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" :courses="coursesData" />
+    <BaseMain :blogs-card="blogsCard" :first-info="firstSectionsInfo" :second-info="secondSectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" :courses="coursesData" />
   </div>
 </template>
 
@@ -149,6 +149,7 @@ export default {
         },
       ],
 
+      // Dati delle lezioni
       lessonsData: [
         {
           data: "129+",
@@ -164,6 +165,7 @@ export default {
         },
       ],
 
+      // Dati dei corsi
       coursesData: [
         {
           src: `${require("./assets/images/course-02-480x298.jpg")}`,
@@ -197,6 +199,7 @@ export default {
         },
       ],
 
+      // Immagini di grafica
       graficImage: [
         {
           image: "maxcoach-shape-01",
@@ -220,6 +223,30 @@ export default {
         },
       ],
 
+      // Dati per le cards dei Blogs
+      blogsCard: [
+        {
+          src: `${require("./assets/images/artist-blog-02-480x325.jpg")}`,
+          subtitle: "ARTIST",
+          description: "Brush Strokes Energize Trees in Paintings",
+          date: "May 15,2020",
+          views: 688,
+        },
+        {
+          src: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
+          subtitle: "ARTIST",
+          description: "Pocket-Sized Notebooks Hold Miniature Paintings",
+          date: "May 15,2020",
+          views: 603,
+        },
+        {
+          src: `${require("./assets/images/artist-blog-03-480x325.jpeg")}`,
+          subtitle: "ARTIST",
+          description: "Connection Between Self-Portraits and Identity",
+          date: "May 15,2020",
+          views: 397,
+        },
+      ],
       // Palette dei colori
       white: "#ffffff",
       cinder: "#171520",
