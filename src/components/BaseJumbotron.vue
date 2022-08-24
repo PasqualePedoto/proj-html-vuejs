@@ -12,7 +12,7 @@
                 <!-- Title -->
                 <h1 class="text-white">{{ info.title }}</h1>
                 <!-- Button -->
-                <BaseButton :text="info.buttonText" />
+                <BaseButton :text="info.buttonText" color="bg-white green" />
               </div>
             </div>
           </div>
