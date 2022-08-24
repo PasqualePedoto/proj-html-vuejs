@@ -11,6 +11,13 @@
         </div>
         <!-- Content -->
         <BaseAllCourses :courses="courses" />
+        <!-- Description -->
+        <div class="w-50 d-inline-block">
+          Control your personal preference settings to get notified about appropriate courses.
+          <a href="#" class="link">
+            <div class="d-inline-block fw-bold">View all courses <i class="fa-solid fa-arrow-right-long"></i></div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -30,5 +37,9 @@ export default {
 <style lang="scss" scoped>
 .text-green {
   color: #2fab97;
+}
+
+.link {
+  box-shadow: 1px 2px 2px #dedede;
 }
 </style>
