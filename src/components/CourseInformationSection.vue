@@ -15,10 +15,10 @@
             </div>
             <!-- Image -->
             <div class="col-8">
-              <figure class="m-0 position-relative ps-5 pe-5">
+              <figure class="m-0 position-relative ps-5 pe-5 image">
                 <img :src="allInfo.image" alt="photo" />
                 <img :src="allInfo.imgYoutube" class="youtube-logo" v-if="allInfo.section === 'how-we-work'" />
-                <img :src="allInfo.female" alt="" class="female" v-if="allInfo.section === 'everithing-max-coach'" />
+                <img :src="allInfo.female" alt="" class="girl" v-if="allInfo.section === 'everithing-max-coach'" />
               </figure>
             </div>
           </div>
@@ -61,6 +61,8 @@ section {
   figure {
     height: 400px;
 
+    // Fissiamo il logo di youtube al centro dell'immagine ma solo della
+    // sezione 'How we work'
     .youtube-logo {
       position: absolute;
       top: 50%;
@@ -71,7 +73,9 @@ section {
       height: 50px;
     }
 
-    .female {
+    // Fissiamo l'immagine della donna al centro dell'immagine ma solo della
+    // sezione 'everything in maxcoach'
+    .girl {
       position: absolute;
       left: 85%;
       bottom: 80%;
@@ -79,6 +83,15 @@ section {
       width: 110px;
       height: 110px;
     }
+  }
+}
+
+// Modelliamo l'effetto di hover sul logo di youtube
+.image:hover {
+  cursor: pointer;
+
+  .youtube-logo {
+    filter: contrast(200%);
   }
 }
 </style>
