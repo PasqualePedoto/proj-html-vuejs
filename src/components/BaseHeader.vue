@@ -24,7 +24,11 @@
             </figure>
             <!-- Header Searchbar -->
             <nav class="d-flex align-items-center justify-content-center">
-              <a href="#"><i class="fa-solid fa-cart-shopping me-3"></i></a>
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping me-3 position-relative">
+                  <div class="cart d-flex align-items-center justify-content-center">0</div>
+                </i></a
+              >
               <a href="#"><i class="fa-regular fa-circle-user me-3"></i></a>
               <BaseSearchbar placeholder="Search..." />
             </nav>
@@ -52,6 +56,22 @@ header {
   figure {
     width: 130px;
     height: 100px;
+  }
+
+  // Posizioniamo il numero di elementi presenti nel carrello
+  nav .cart {
+    background-color: #2fab97;
+    color: white;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    font-size: 10px;
+
+    position: absolute;
+    bottom: 90%;
+    left: 90%;
   }
 }
 </style>

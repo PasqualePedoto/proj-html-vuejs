@@ -39,9 +39,6 @@ export default {
   box-shadow: 1px 2px 2px #dedede;
 
   padding: 0 2px;
-
-  // Transitions sui colori
-  transition: background-color 0.2s linear, color 0.2s linear;
 }
 
 //************* */
@@ -70,11 +67,5 @@ export default {
 
 .bg-black {
   background-color: black;
-}
-
-// Effetto di hover sui links
-a:hover .link {
-  background-color: #2fab97;
-  color: white;
 }
 </style>
