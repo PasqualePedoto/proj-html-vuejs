@@ -2,7 +2,7 @@
   <div class="position-relative">
     <BaseHeader :headerLinks="headerLinks" class="header-position" />
     <BaseJumbotron :info="jumboInformations" />
-    <BaseMain :main-info="sectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" :courses="coursesData" />
+    <BaseMain :first-info="firstSectionsInfo" :second-info="secondSectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" :courses="coursesData" />
   </div>
 </template>
 
@@ -30,60 +30,7 @@ export default {
         buttonText: "Download free guidebook",
       },
 
-      sectionsInfo: [
-        {
-          section: "everithing-max-coach",
-          female: `${require("./assets/images/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg")}`,
-          image: `${require("./assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg")}`,
-          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
-          subtitle: "EVERYTHING IN MAXCOACH",
-          title: [
-            {
-              text: "Learn about our ",
-              color: "black",
-            },
-            {
-              text: "Work Culture",
-              color: "green",
-            },
-            {
-              text: " at MaxCoach",
-              color: "black",
-            },
-          ],
-          link: {
-            type: "link",
-            text: "Get Free Guide",
-            desc: "Have questions?",
-            color: "bg-white green",
-          },
-          paragraph:
-            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
-        },
-        {
-          section: "how-we-work",
-          image: `${require("./assets/images/stock-full-hd-11-670x450.jpg")}`,
-          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
-          subtitle: "HOW WE WORK",
-          title: [
-            {
-              text: "Upgrade Your Skills ",
-              color: "black",
-            },
-            {
-              text: "Upgrade Your Life",
-              color: "green",
-            },
-          ],
-          link: {
-            type: "link",
-            text: "Download free guidebook",
-            desc: "",
-            color: "bg-white black",
-          },
-          paragraph:
-            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
-        },
+      secondSectionsInfo: [
         {
           section: "testimonials",
           image: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
@@ -136,6 +83,62 @@ export default {
             text: "Get Free Guide",
             desc: "",
             color: "white bg-green",
+          },
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+      ],
+
+      firstSectionsInfo: [
+        {
+          section: "everithing-max-coach",
+          female: `${require("./assets/images/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg")}`,
+          image: `${require("./assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
+          subtitle: "EVERYTHING IN MAXCOACH",
+          title: [
+            {
+              text: "Learn about our ",
+              color: "black",
+            },
+            {
+              text: "Work Culture",
+              color: "green",
+            },
+            {
+              text: " at MaxCoach",
+              color: "black",
+            },
+          ],
+          link: {
+            type: "link",
+            text: "Get Free Guide",
+            desc: "Have questions?",
+            color: "bg-white green",
+          },
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+        {
+          section: "how-we-work",
+          image: `${require("./assets/images/stock-full-hd-11-670x450.jpg")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
+          subtitle: "HOW WE WORK",
+          title: [
+            {
+              text: "Upgrade Your Skills ",
+              color: "black",
+            },
+            {
+              text: "Upgrade Your Life",
+              color: "green",
+            },
+          ],
+          link: {
+            type: "link",
+            text: "Download free guidebook",
+            desc: "",
+            color: "bg-white black",
           },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
