@@ -55,6 +55,10 @@
                 <figure class="girl">
                   <img :src="allInfo.female" alt="" v-if="allInfo.section === 'everithing-max-coach'" />
                 </figure>
+                <!-- Immagine grafica: 3 lineette -->
+                <figure class="grafic-image linear" v-if="allInfo.section === 'free-guide'">
+                  <img :src="grafic[0].src" :alt="grafic[0].image" />
+                </figure>
               </div>
             </div>
           </div>
@@ -148,6 +152,14 @@ section {
 
       top: 90%;
       left: 70%;
+    }
+
+    .grafic-image.linear {
+      width: 120px;
+      height: 120px;
+
+      top: 100%;
+      right: 90%;
     }
 
     //***************** */
