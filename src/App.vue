@@ -161,21 +161,30 @@ export default {
         {
           src: `${require("./assets/images/course-02-480x298.jpg")}`,
           description: "Learning to Write as a Professional Author",
-          cost: "$40.00",
+          cost: {
+            int: "$40",
+            dec: "00",
+          },
           numberLessons: 20,
           numberStudents: 50,
         },
         {
           src: `${require("./assets/images/stock-full-hd-03-480x298.jpg")}`,
           description: "Costumer-centric Info-Tech Strategies",
-          cost: "$00.00",
+          cost: {
+            int: "$00",
+            dec: "00",
+          },
           numberLessons: 24,
           numberStudents: 769,
         },
         {
           src: `${require("./assets/images/course-02-480x298.jpg")}`,
           description: "Open Programming Courses for Everyone:Python",
-          cost: "$19.00",
+          cost: {
+            int: "$19",
+            dec: "00",
+          },
           numberLessons: 17,
           numberStudents: 62,
         },

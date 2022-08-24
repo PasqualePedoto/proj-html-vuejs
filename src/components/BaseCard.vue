@@ -6,7 +6,10 @@
     </figure>
     <!-- Card Description -->
     <div class="card-element">
-      <div v-if="type === 'course'" class="cost">{{ item.cost }}</div>
+      <div v-if="type === 'course'" class="cost">
+        <div class="d-inline-block">{{ item.cost.int }}</div>
+        <div class="decimal d-inline-block">.{{ item.cost.dec }}</div>
+      </div>
       <div class="desc">{{ item.description }}</div>
       <!-- Elementi propri del corso -->
       <div v-if="type === 'course'" class="course-info d-flex align-items-center">
@@ -37,6 +40,11 @@ export default {
     width: 300px;
 
     text-align: start;
+
+    // Rendiamo il numero decimale più piccolo
+    .decimal {
+      font-size: 10px;
+    }
 
     // Diamo un po d'aria
     .desc,
