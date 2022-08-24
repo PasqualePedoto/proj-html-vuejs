@@ -1,5 +1,7 @@
 <template>
-  <button class="btn">{{ text }} <i class="fa-solid fa-arrow-right ms-2"></i></button>
+  <button :class="color">
+    <div class="button-in">{{ text }} <i class="fa-solid fa-arrow-right ms-2" v-show="section !== 'newsletter'"></i></div>
+  </button>
 </template>
 
 <script>
@@ -7,31 +9,44 @@ export default {
   name: "BaseButton",
   props: {
     text: String,
+    section: String,
+    color: String,
   },
 };
 </script>
 
 <style lang="scss" scoped>
+// Modelliamo i colori del il button
+
+.bg-green {
+  background-color: #2fab97;
+}
+
+.green {
+  color: #2fab97;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.white {
+  color: white;
+}
+
 // Modelliamo il button
 button {
-  // Colori del testo e del bg
-  background-color: white;
-  color: #2fab97;
-
   // Spaziature
   border: 0;
-  padding: 16px;
-
   // Dimensione del font
   font-size: 12px;
   font-weight: bold;
 
-  //   transition: background-color 0.025s linear, color 0.5s linear;
-}
+  // Ho dovuto forzare l'altezza
+  height: 44px;
 
-// Effetto di hover sul button
-button:hover {
-  background-color: #2fab97;
-  color: white;
+  .button-in {
+    padding: 12px;
+  }
 }
 </style>

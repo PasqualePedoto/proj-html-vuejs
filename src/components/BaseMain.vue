@@ -9,9 +9,10 @@
     </div>
     <!-- Second area -->
     <CourseInformationSection :grafic="grafic" v-for="(info, i) in secondInfo" :key="i + 'r'" :section="info.section" :allInfo="info" :direction="i" :lessons-data="lessonsData" />
-    <div class="gray-bg">
+    <div class="gray-bg pb-5">
       <TheOurBlogs :blogs-card="blogsCard" />
     </div>
+    <BaseNewsletter class="pt-5 h-100" :grafic="grafic" />
   </main>
 </template>
 
@@ -19,9 +20,10 @@
 import CourseInformationSection from "./CourseInformationSection.vue";
 import BaseCourses from "./BaseCourses.vue";
 import TheOurBlogs from "./TheOurBlogs.vue";
+import BaseNewsletter from "./BaseNewsletter.vue";
 export default {
   name: "BaseMain",
-  components: { CourseInformationSection, BaseCourses, TheOurBlogs },
+  components: { CourseInformationSection, BaseCourses, TheOurBlogs, BaseNewsletter },
   props: {
     firstInfo: Array,
     secondInfo: Array,
