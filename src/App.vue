@@ -2,7 +2,7 @@
   <div class="position-relative">
     <BaseHeader :headerLinks="headerLinks" class="header-position" />
     <BaseJumbotron :info="jumboInformations" />
-    <BaseMain :main-info="sectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" />
+    <BaseMain :main-info="sectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" :courses="coursesData" />
   </div>
 </template>
 
@@ -86,6 +86,30 @@ export default {
         {
           data: "4%",
           description: "SATISFACTION RATE",
+        },
+      ],
+
+      coursesData: [
+        {
+          src: `${require("./assets/images/course-02-480x298.jpg")}`,
+          description: "Learning to Write as a Professional Author",
+          cost: "$40.00",
+          numberLessons: 20,
+          numberStudents: 50,
+        },
+        {
+          src: `${require("./assets/images/stock-full-hd-03-480x298.jpg")}`,
+          description: "Costumer-centric Info-Tech Strategies",
+          cost: "$00.00",
+          numberLessons: 24,
+          numberStudents: 769,
+        },
+        {
+          src: `${require("./assets/images/course-02-480x298.jpg")}`,
+          description: "Open Programming Courses for Everyone:Python",
+          cost: "$19.00",
+          numberLessons: 17,
+          numberStudents: 62,
         },
       ],
 
