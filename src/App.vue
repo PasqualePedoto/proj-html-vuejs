@@ -3,6 +3,7 @@
     <BaseHeader :headerLinks="headerLinks" class="header-position" />
     <BaseJumbotron :info="jumboInformations" />
     <BaseMain :blogs-card="blogsCard" :first-info="firstSectionsInfo" :second-info="secondSectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" :courses="coursesData" />
+    <BaseFooter :footer-voices="footerVoices" />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import BaseHeader from "./components/BaseHeader.vue";
 import BaseJumbotron from "./components/BaseJumbotron.vue";
 import BaseMain from "./components/BaseMain.vue";
+import BaseFooter from "./components/BaseFooter.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     BaseHeader,
     BaseJumbotron,
     BaseMain,
+    BaseFooter,
   },
   data() {
     return {
@@ -245,6 +248,22 @@ export default {
           description: "Connection Between Self-Portraits and Identity",
           date: "May 15,2020",
           views: 397,
+        },
+      ],
+
+      // Voci del Footer
+      footerVoices: [
+        {
+          title: "Address",
+          voice: ["382 NE 191st # 87394 Miami, FI 33179-3899", "+1(305)547-9909(9am - 5pm EST,Monday - Friday)", "support@maxcoach.com"],
+        },
+        {
+          title: "Explore",
+          voice: ["Start here", "Blog", "About us", "Success story", "Courses", "Contact us"],
+        },
+        {
+          title: "Information",
+          voice: ["Merchandizing", "Purchase guide", "Privacy policy", "Terms of service"],
         },
       ],
       // Palette dei colori
