@@ -226,7 +226,7 @@ export default {
       // Dati per le cards dei Blogs
       blogsCard: [
         {
-          src: `${require("./assets/images/artist-blog-02-480x325.jpg")}`,
+          src: `${require("./assets/images/artist-blog-03-480x325.jpeg")}`,
           subtitle: "ARTIST",
           description: "Brush Strokes Energize Trees in Paintings",
           date: "May 15,2020",
@@ -240,7 +240,7 @@ export default {
           views: 603,
         },
         {
-          src: `${require("./assets/images/artist-blog-03-480x325.jpeg")}`,
+          src: `${require("./assets/images/artist-blog-02-480x325.jpg")}`,
           subtitle: "ARTIST",
           description: "Connection Between Self-Portraits and Identity",
           date: "May 15,2020",
