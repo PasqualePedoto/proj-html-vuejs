@@ -13,11 +13,7 @@
               <!-- Paragraph -->
               <p>{{ allInfo.paragraph }}</p>
               <!-- Link -->
-              <div>
-                <a href="#"
-                  ><div class="link">{{ allInfo.link }}<i class="ms-2 fa-solid fa-arrow-right"></i></div
-                ></a>
-              </div>
+              <SectionLink :link="allInfo.link" />
             </div>
             <!-- Image -->
             <div class="col-8">
@@ -39,11 +35,13 @@
 </template>
 <script>
 import BaseLessonData from "../components/BaseLessonData.vue";
+import SectionLink from "./SectionLink.vue";
 
 export default {
   name: "CourseInformationSection",
   components: {
     BaseLessonData,
+    SectionLink,
   },
   props: {
     section: String,
@@ -63,29 +61,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    .link {
-      // Cambiamo il display in modo tale da by-passare
-      // lo stretch dei flex items
-      display: inline-block;
-
-      // Colore del testo
-      color: #2fab97;
-
-      // Box shadow
-      box-shadow: 1px 2px 2px #dedede;
-
-      padding: 0 2px;
-
-      // Transitions sui colori
-      transition: background-color 0.2s linear, color 0.2s linear;
-    }
-
-    // Effetto di hover sui links
-    a:hover .link {
-      background-color: #2fab97;
-      color: white;
-    }
   }
 
   // Diamo un'altezza fissa alle figure di fianco alle descrizioni
