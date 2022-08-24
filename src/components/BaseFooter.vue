@@ -2,26 +2,34 @@
   <footer>
     <div class="container">
       <div class="row">
+        <!-- Sezione Sinistra del Footer -->
         <div class="col-6">
+          <!-- ***** Prima Voce del Footer ***** -->
           <div class="text-white mb-3">{{ footerVoices[0].title }}</div>
+          <!-- Lista di voci -->
           <ul>
             <li v-for="(voice, i) in footerVoices[0].voice" :key="i">
               {{ voice }}
             </li>
           </ul>
         </div>
+        <!-- Sezione destra del Footer -->
         <div class="col-6">
           <div class="d-flex">
             <div class="w-50">
+              <!-- ***** Seconda Voce del Footer ***** -->
               <div class="text-white mb-3">{{ footerVoices[1].title }}</div>
+              <!-- Lista di voci -->
               <ul class="d-flex flex-column flex-wrap flex-grow-1">
                 <li v-for="(voice, i) in footerVoices[1].voice" :key="i">
                   {{ voice }}
                 </li>
               </ul>
             </div>
+            <!-- ***** Terza Voce del Footer ***** -->
             <div>
               <div class="text-white mb-3">{{ footerVoices[2].title }}</div>
+              <!-- Lista di voci -->
               <ul>
                 <li v-for="(voice, i) in footerVoices[2].voice" :key="i">
                   {{ voice }}
@@ -30,6 +38,8 @@
             </div>
           </div>
         </div>
+        <!-- Scritta riguardante il copyright -->
+        <div class="col-12 text-center copyright mt-5"><i class="fa-solid fa-copyright me-2"></i>2020 Maxcoach. All Rights Reserved</div>
       </div>
     </div>
   </footer>
@@ -46,17 +56,32 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+  // Definiamo il bg del Footer
   background-color: #181621;
 
+  // Diamo un po d'aria
   padding: 50px 0;
 
   ul {
+    // Settiamo il padding dell'ul
     padding: 0;
-    max-height: 150px;
+
+    // Altezza fissa così da creare l'effetto richiesto delle voci della
+    // seconda lista di voci
+    max-height: 120px;
     li {
+      // Definiamo i colori degli li
       color: grey;
       margin: 5px 0;
+      font-size: 12px;
     }
+  }
+
+  // Definiamo il colore della scritta riguarda il copyright
+  .copyright {
+    color: grey;
+    margin: 5px 0;
+    font-size: 12px;
   }
 }
 </style>
