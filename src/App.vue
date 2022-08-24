@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <BaseHeader :headerLinks="headerLinks" />
+  <div class="position-relative">
+    <BaseHeader :headerLinks="headerLinks" class="header-position" />
     <BaseJumbotron :info="jumboInformations" />
     <BaseMain :main-info="sectionsInfo" :lessons-data="lessonsData" />
   </div>
@@ -114,4 +114,15 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/style.scss";
+
+.header-position {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 10;
+
+  box-shadow: 1px 2px 2px #dedede;
+}
 </style>

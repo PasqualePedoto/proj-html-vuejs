@@ -48,6 +48,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
+  background-color: white;
   figure {
     width: 130px;
     height: 100px;
