@@ -37,8 +37,26 @@ export default {
           image: `${require("./assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg")}`,
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "EVERYTHING IN MAXCOACH",
-          title: "Learn about our Work Culture at MaxCoach",
-          link: "Have questions? Get Free Guide",
+          title: [
+            {
+              text: "Learn about our ",
+              color: "black",
+            },
+            {
+              text: "Work Culture",
+              color: "green",
+            },
+            {
+              text: " at MaxCoach",
+              color: "black",
+            },
+          ],
+          link: {
+            type: "link",
+            text: "Get Free Guide",
+            desc: "Have questions?",
+            color: "bg-white green",
+          },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },
@@ -47,8 +65,22 @@ export default {
           image: `${require("./assets/images/stock-full-hd-11-670x450.jpg")}`,
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "HOW WE WORK",
-          title: "Upgrade Your Skills Upgrade Your Life",
-          link: "Download free guidebook",
+          title: [
+            {
+              text: "Upgrade Your Skills ",
+              color: "black",
+            },
+            {
+              text: "Upgrade Your Life",
+              color: "green",
+            },
+          ],
+          link: {
+            type: "link",
+            text: "Download free guidebook",
+            desc: "",
+            color: "bg-white black",
+          },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },
@@ -57,8 +89,26 @@ export default {
           image: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "TESTIMONIALS",
-          title: "Why Do Peaple *Hearts* Us?",
-          link: "View all",
+          title: [
+            {
+              text: "Why Do Peaple ",
+              color: "black",
+            },
+            {
+              text: "*Hearts*",
+              color: "green",
+            },
+            {
+              text: " Us?",
+              color: "black",
+            },
+          ],
+          link: {
+            type: "link",
+            text: "View all",
+            desc: "",
+            color: "bg-white black",
+          },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },
@@ -67,8 +117,26 @@ export default {
           image: `${require("./assets/images/home-3-team-image-300x278.png")}`,
           imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
           subtitle: "EVERYTHING IN MAXCOACH",
-          title: "We're Here To Transform You!",
-          link: "Get Free Guide",
+          title: [
+            {
+              text: "We're Here To ",
+              color: "black",
+            },
+            {
+              text: "Transform",
+              color: "green",
+            },
+            {
+              text: " You!",
+              color: "black",
+            },
+          ],
+          link: {
+            type: "button",
+            text: "Get Free Guide",
+            desc: "",
+            color: "white bg-green",
+          },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
         },

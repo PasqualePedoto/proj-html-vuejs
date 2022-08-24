@@ -1,8 +1,14 @@
 <template>
   <div>
-    <a href="#"
-      ><div class="link">{{ link }}<i class="ms-2 fa-solid fa-arrow-right"></i></div
-    ></a>
+    <div v-if="link.type === 'button'">
+      <button :class="link.color" class="info-button">{{ link.text }}</button>
+    </div>
+    <div v-else>
+      <a href="#" class="link">
+        <div v-if="link.desc !== ''" class="d-inline-block me-2">{{ link.desc }}</div>
+        <div :class="link.color" class="d-inline-block">{{ link.text }}<i class="ms-2 fa-solid fa-arrow-right"></i></div
+      ></a>
+    </div>
   </div>
 </template>
 
@@ -10,19 +16,24 @@
 export default {
   name: "SectionLink",
   props: {
-    link: String,
+    link: Object,
   },
 };
 </script>
 
 <style lang="scss" scoped>
+// Settiamo lo stile del bottone
+.info-button {
+  padding: 10px;
+
+  border: 0;
+}
+
+// Settiamo lo stile del link
 .link {
   // Cambiamo il display in modo tale da by-passare
   // lo stretch dei flex items
   display: inline-block;
-
-  // Colore del testo
-  color: #2fab97;
 
   // Box shadow
   box-shadow: 1px 2px 2px #dedede;
@@ -31,6 +42,34 @@ export default {
 
   // Transitions sui colori
   transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+//************* */
+// COLORI DEI LINKS E BUTTONS
+//************* */
+
+.white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.green {
+  color: #2fab97;
+}
+
+.bg-green {
+  background-color: #2fab97;
+}
+
+.black {
+  color: black;
+}
+
+.bg-black {
+  background-color: black;
 }
 
 // Effetto di hover sui links

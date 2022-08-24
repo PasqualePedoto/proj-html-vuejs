@@ -9,7 +9,9 @@
               <!-- Subtitle -->
               <h6>{{ allInfo.subtitle }}</h6>
               <!-- Title -->
-              <h1>{{ allInfo.title }}</h1>
+              <div>
+                <h1 class="d-inline-block me-2" v-for="(words, i) in allInfo.title" :key="i" :class="words.color">{{ words.text }}</h1>
+              </div>
               <!-- Paragraph -->
               <p>{{ allInfo.paragraph }}</p>
               <!-- Link -->
@@ -94,8 +96,16 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
 
+    // Modelliamo i colori
+    .green {
+      color: #2fab97;
+    }
+
+    .black {
+      color: black;
+    }
+  }
   // Diamo un'altezza fissa alle figure di fianco alle descrizioni
   .block-image {
     height: 400px;
@@ -206,14 +216,14 @@ section {
       height: 110px;
     }
   }
-}
 
-// Modelliamo l'effetto di hover sul logo di youtube
-.image:hover {
-  cursor: pointer;
+  // Modelliamo l'effetto di hover sul logo di youtube
+  .image:hover {
+    cursor: pointer;
 
-  .youtube-logo {
-    filter: contrast(200%);
+    .youtube-logo {
+      filter: contrast(200%);
+    }
   }
 }
 </style>
