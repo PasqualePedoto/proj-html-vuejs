@@ -4,8 +4,8 @@
       <button :class="link.color" class="info-button">{{ link.text }}</button>
     </div>
     <div v-else>
+      <div v-if="link.desc !== ''" class="d-inline-block me-2">{{ link.desc }}</div>
       <a href="#" class="link">
-        <div v-if="link.desc !== ''" class="d-inline-block me-2">{{ link.desc }}</div>
         <div :class="link.color" class="d-inline-block">{{ link.text }}<i class="ms-2 fa-solid fa-arrow-right"></i></div
       ></a>
     </div>
