@@ -30,65 +30,8 @@ export default {
         buttonText: "Download free guidebook",
       },
 
-      secondSectionsInfo: [
-        {
-          section: "testimonials",
-          image: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
-          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
-          subtitle: "TESTIMONIALS",
-          title: [
-            {
-              text: "Why Do Peaple ",
-              color: "black",
-            },
-            {
-              text: "*Hearts*",
-              color: "green",
-            },
-            {
-              text: " Us?",
-              color: "black",
-            },
-          ],
-          link: {
-            type: "link",
-            text: "View all",
-            desc: "",
-            color: "bg-white black",
-          },
-          paragraph:
-            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
-        },
-        {
-          section: "free-guide",
-          image: `${require("./assets/images/home-3-team-image-300x278.png")}`,
-          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
-          subtitle: "EVERYTHING IN MAXCOACH",
-          title: [
-            {
-              text: "We're Here To ",
-              color: "black",
-            },
-            {
-              text: "Transform",
-              color: "green",
-            },
-            {
-              text: " You!",
-              color: "black",
-            },
-          ],
-          link: {
-            type: "button",
-            text: "Get Free Guide",
-            desc: "",
-            color: "white bg-green",
-          },
-          paragraph:
-            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
-        },
-      ],
-
+      // Primo insieme di sezioni che andranno prima del componente
+      // contenente le card dei corsi
       firstSectionsInfo: [
         {
           section: "everithing-max-coach",
@@ -139,6 +82,67 @@ export default {
             text: "Download free guidebook",
             desc: "",
             color: "bg-white black",
+          },
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+      ],
+
+      // Secondo insieme di sezioni che andranno dopo il componente
+      // contenente le card dei corsi
+      secondSectionsInfo: [
+        {
+          section: "testimonials",
+          image: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
+          subtitle: "TESTIMONIALS",
+          title: [
+            {
+              text: "Why Do Peaple ",
+              color: "black",
+            },
+            {
+              text: "*Hearts*",
+              color: "green",
+            },
+            {
+              text: " Us?",
+              color: "black",
+            },
+          ],
+          link: {
+            type: "link",
+            text: "View all",
+            desc: "",
+            color: "bg-white black",
+          },
+          paragraph:
+            "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
+        },
+        {
+          section: "free-guide",
+          image: `${require("./assets/images/home-3-team-image.png")}`,
+          imgYoutube: `${require("./assets/images/icon-youtube-play.png")}`,
+          subtitle: "EVERYTHING IN MAXCOACH",
+          title: [
+            {
+              text: "We're Here To ",
+              color: "black",
+            },
+            {
+              text: "Transform",
+              color: "green",
+            },
+            {
+              text: " You!",
+              color: "black",
+            },
+          ],
+          link: {
+            type: "button",
+            text: "Get Free Guide",
+            desc: "",
+            color: "white bg-green",
           },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",

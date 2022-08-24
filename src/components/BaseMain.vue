@@ -1,9 +1,13 @@
 <template>
   <main>
-    <!-- All sections -->
-    <CourseInformationSection :grafic="grafic" v-for="(info, i) in firstInfo" :key="i" :section="info.section" :allInfo="info" :direction="i" :lessons-data="lessonsData" />
-    <!-- Latest Online Courses -->
-    <BaseCourses :courses="courses" />
+    <!-- First Area -->
+    <div id="top-area">
+      <!-- First sections -->
+      <CourseInformationSection :grafic="grafic" v-for="(info, i) in firstInfo" :key="i" :section="info.section" :allInfo="info" :direction="i" :lessons-data="lessonsData" />
+      <!-- Latest Online Courses -->
+      <BaseCourses :courses="courses" />
+    </div>
+    <!-- Second area -->
     <CourseInformationSection :grafic="grafic" v-for="(info, i) in secondInfo" :key="i + 'r'" :section="info.section" :allInfo="info" :direction="i" :lessons-data="lessonsData" />
   </main>
 </template>
@@ -24,4 +28,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#top-area {
+  background-color: #f7f7f7;
+}
+</style>

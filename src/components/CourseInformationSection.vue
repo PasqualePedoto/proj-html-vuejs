@@ -1,5 +1,5 @@
 <template>
-  <section :id="section" class="mt-5 mb-5">
+  <section :id="section" class="pt-5 pb-5">
     <div class="container">
       <div class="row">
         <!-- Text -->
@@ -24,7 +24,7 @@
                 <!-- Immagine principale della sezione -->
                 <!-- ******************* -->
                 <figure>
-                  <img :src="allInfo.image" alt="photo" />
+                  <img :src="allInfo.image" alt="photo" :class="{ 'w-auto': allInfo.section === 'free-guide' }" />
                 </figure>
                 <!-- * Effetti grafici sull'immagine principale -->
                 <!-- Circle -->
