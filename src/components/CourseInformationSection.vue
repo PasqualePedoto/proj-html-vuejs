@@ -1,10 +1,10 @@
 <template>
-  <section :id="section" class="pt-5 pb-5">
+  <section :id="section">
     <div class="container">
       <div class="row">
         <!-- Text -->
-        <div class="col-12">
-          <div class="row pt-5">
+        <div class="col-12 padding-y">
+          <div class="row">
             <div class="col-4 flex-shrink-0 info" :class="{ 'order-1': direction % 2 === 1 }">
               <!-- Subtitle -->
               <h6>{{ allInfo.subtitle }}</h6>
@@ -93,6 +93,10 @@ export default {
 
 <style lang="scss" scoped>
 section {
+  // Padding lungo l'asse y
+  .padding-y {
+    padding: 130px 0;
+  }
   // Flexiamo l'area delle info in modo talòe da disporle centralmente
   // rispetto alla foto di fianco
   .info {
@@ -117,6 +121,10 @@ section {
     // Facciamo in modo che il figure segua il suo contenitore in altezza
     figure {
       height: 100%;
+
+      // Serve a far emergere l'immagine principale con lo z-index
+      position: absolute;
+      z-index: 2;
     }
 
     // Fissiamo il logo di youtube al centro dell'immagine ma solo della
@@ -158,7 +166,7 @@ section {
       width: 120px;
       height: 120px;
 
-      top: 100%;
+      top: 86%;
       right: 90%;
     }
 
@@ -168,7 +176,7 @@ section {
 
     // QUADRATO DI SINISTRA
     .grafic-image.left-square {
-      z-index: -1;
+      z-index: 0;
 
       top: 85%;
       left: 0;
@@ -176,7 +184,7 @@ section {
 
     // QUADRATO DI DESTRA
     .grafic-image.right-square {
-      z-index: -1;
+      z-index: 0;
 
       top: 85%;
       left: 0;
@@ -188,7 +196,7 @@ section {
 
     // ESAGONO DI DESTRA
     .grafic-image.right-hexagon {
-      z-index: -1;
+      z-index: 0;
 
       left: 80%;
       bottom: 90%;
@@ -196,7 +204,7 @@ section {
 
     // ESAGONO DI SINISTRA
     .grafic-image.left-hexagon {
-      z-index: -1;
+      z-index: 0;
 
       top: 15%;
       left: 15%;
@@ -207,7 +215,7 @@ section {
     //***************** */
 
     .grafic-image.cloud {
-      z-index: -1;
+      z-index: 0;
 
       bottom: 83%;
       right: 87%;
