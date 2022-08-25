@@ -23,7 +23,7 @@
                 <!-- ******************* -->
                 <!-- Immagine principale della sezione -->
                 <!-- ******************* -->
-                <figure v-if="allInfo.section !== 'testimonials'">
+                <figure v-if="allInfo.section !== 'testimonials'" class="position-relative">
                   <img :src="allInfo.image" alt="photo" :class="{ 'w-auto': allInfo.section === 'free-guide' }" />
                 </figure>
                 <!-- Immagine dei testimonials creata a mano perchè non trovavo la foto -->
@@ -330,7 +330,7 @@ section {
     // sezione 'everything in maxcoach'
     .girl {
       position: absolute;
-      left: 70%;
+      left: 85%;
       bottom: 80%;
 
       width: 110px;
