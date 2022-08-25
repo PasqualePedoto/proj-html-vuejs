@@ -1,8 +1,10 @@
 <template>
   <div class="card">
     <!-- Card Image -->
-    <figure class="card-element image m-0">
+    <figure class="card-element image m-0 position-relative">
       <img :src="item.src" :alt="item.description" />
+      <!-- Label "FREE" -->
+      <BaseLabel text="FREE" />
     </figure>
     <!-- Card Description -->
     <div class="card-element">
@@ -32,12 +34,14 @@
 </template>
 
 <script>
+import BaseLabel from "./BaseLabel.vue";
 export default {
   name: "BaseCard",
   props: {
     item: Object,
     type: String,
   },
+  components: { BaseLabel },
 };
 </script>
 
