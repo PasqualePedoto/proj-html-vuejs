@@ -10,8 +10,7 @@
               <ul class="d-flex align-items-center justify-content-center m-0">
                 <li v-for="(link, i) in headerLinks" :key="i" class="me-3">
                   <div class="d-flex align-items-center justify-content-center">
-                    <a href="#" class="me-1">{{ link }}</a>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <a href="#" class="me-1">{{ link }}<i class="ms-1 fa-solid fa-angle-down"></i></a>
                   </div>
                 </li>
               </ul>
@@ -53,6 +52,11 @@ export default {
 <style lang="scss" scoped>
 header {
   background-color: var(--secondary-color);
+
+  li:hover a {
+    color: var(--primary-color);
+  }
+
   figure {
     width: 130px;
     height: 100px;
