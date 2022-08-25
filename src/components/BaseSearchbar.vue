@@ -2,7 +2,7 @@
   <form role="search">
     <div class="d-flex align-items-center justify-content-center">
       <input class="form-control me-2" type="search" :placeholder="placeholder" aria-label="Search" />
-      <BaseButton text="" color="primary-color" section="header" />
+      <BaseButton text="" color="primary-color bg-transparent" section="header" />
     </div>
   </form>
 </template>

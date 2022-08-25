@@ -284,7 +284,7 @@ export default {
 <style lang="scss">
 @import "./assets/scss/style.scss";
 
-// Definiamo le custom properties di cui avrò bisogno
+// Definisco le custom properties di cui avrò bisogno
 :root {
   --primary-color: #ef6f31;
   --secondary-color: #fff;

@@ -25,6 +25,11 @@ export default {
 <style lang="scss" scoped>
 // Modelliamo i colori del il button
 
+// BGC transparente
+.bg-transparent {
+  background-color: transparent;
+}
+
 // * Colore principale: BG E COLOR
 .bg-primary-color {
   background-color: var(--primary-color);
