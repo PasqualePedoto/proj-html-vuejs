@@ -103,5 +103,10 @@ footer {
     margin: 5px 0;
     font-size: 12px;
   }
+
+  // Effetto di hover sui link del Footer
+  li:hover a {
+    color: white;
+  }
 }
 </style>
