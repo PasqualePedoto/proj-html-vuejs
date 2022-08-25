@@ -43,5 +43,13 @@ export default {
 // Creiamo il box-shadow
 .link {
   box-shadow: 1px 2px 2px #dedede;
+
+  padding: 5px;
+}
+
+// Effetto di hover sul link
+.link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 </style>

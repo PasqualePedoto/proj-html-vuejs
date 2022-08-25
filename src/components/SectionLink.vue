@@ -8,8 +8,8 @@
     <!-- Se è un link -->
     <div v-else>
       <div v-if="link.desc !== ''" class="d-inline-block me-2">{{ link.desc }}</div>
-      <a href="#" class="link">
-        <div :class="link.color" class="d-inline-block">{{ link.text }}<i class="ms-2 fa-solid fa-arrow-right"></i></div
+      <a href="#" class="link p-0">
+        <div :class="link.color" class="d-inline-block w-100">{{ link.text }}<i class="ms-2 fa-solid fa-arrow-right"></i></div
       ></a>
     </div>
   </div>
@@ -44,6 +44,12 @@ export default {
   box-shadow: 1px 2px 2px #dedede;
 
   padding: 0 2px;
+}
+
+// Effetto di hover sui link
+.link:hover div {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 //************* */

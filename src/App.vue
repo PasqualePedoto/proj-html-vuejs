@@ -191,7 +191,7 @@ export default {
           numberStudents: 769,
         },
         {
-          src: `${require("./assets/images/course-02-480x298.jpg")}`,
+          src: `${require("./assets/images/stock-full-hd-04-480x298.jpg")}`,
           description: "Open Programming Courses for Everyone:Python",
           cost: {
             int: "$19",

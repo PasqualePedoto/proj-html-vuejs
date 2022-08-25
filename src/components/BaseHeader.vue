@@ -81,5 +81,10 @@ header {
     bottom: 90%;
     left: 90%;
   }
+
+  // Definiamo l'effetto di Hover sulle icone
+  nav a:hover i {
+    color: var(--primary-color);
+  }
 }
 </style>
