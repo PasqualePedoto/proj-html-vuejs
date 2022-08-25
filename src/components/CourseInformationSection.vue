@@ -133,6 +133,12 @@ section {
   .padding-y {
     padding: 130px 0;
   }
+
+  // Ridimensioniamo i dati delle lezioni
+  .data-lesson {
+    width: 200px;
+  }
+
   // Flexiamo l'area delle info in modo talòe da disporle centralmente
   // rispetto alla foto di fianco
   .info {
@@ -324,7 +330,7 @@ section {
     // sezione 'everything in maxcoach'
     .girl {
       position: absolute;
-      left: 85%;
+      left: 70%;
       bottom: 80%;
 
       width: 110px;

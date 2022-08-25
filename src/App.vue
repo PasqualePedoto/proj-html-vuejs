@@ -294,6 +294,7 @@ export default {
   --bgc-footer: #181621;
 }
 
+// Posizioniamo l'Header in modo tale da vederlo sempre
 .header-position {
   position: sticky;
   top: 0;

@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="position-relative">
     <div class="container">
       <div class="row">
         <!-- Sezione Sinistra del Footer -->
@@ -57,6 +57,8 @@
         </div>
         <!-- Scritta riguardante il copyright -->
         <div class="col-12 text-center copyright mt-5"><i class="fa-solid fa-copyright me-2"></i>2020 Maxcoach. All Rights Reserved</div>
+        <!-- Freccetta verso l'alto -->
+        <div class="up-arrow"><i class="fa-solid fa-arrow-up"></i></div>
       </div>
     </div>
   </footer>
@@ -73,6 +75,24 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+  // Freccetta in position absolute
+  .up-arrow {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
   // Definiamo il bg del Footer
   background-color: var(--bgc-footer);
 
