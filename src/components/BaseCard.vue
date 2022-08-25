@@ -4,7 +4,7 @@
     <figure class="card-element image m-0 position-relative">
       <img :src="item.src" :alt="item.description" />
       <!-- Label "FREE" -->
-      <BaseLabel text="FREE" />
+      <BaseLabel text="FREE" v-if="item.description === 'Pocket-Sized Notebooks Hold Miniature Paintings'" />
     </figure>
     <!-- Card Description -->
     <div class="card-element">
