@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex align-items-center justify-content-center mb-5">
-    <div class="text-center">
+  <div class="text-center mb-5">
+    <div>
       <!-- Title -->
       <div>
         <h1 class="d-inline-block me-2">Subscribe</h1>
@@ -9,7 +9,7 @@
       <!-- Paragraph -->
       <div>Enter your email address to register to our newsletter subscription delivered on a regular basis!</div>
       <!-- Content -->
-      <div class="mt-5 d-flex align-items-center justify-content-between">
+      <div class="mt-5 d-flex align-items-center justify-content-evenly">
         <!-- Circle -->
         <figure class="m-0 image h-100 d-flex align-items-center">
           <img :src="grafic[1].src" :alt="grafic[0].image" />

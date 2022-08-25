@@ -160,6 +160,9 @@ section {
       align-items: center;
       justify-content: center;
 
+      //************** */
+      // Settiamo il font al testo dei Testimonials
+      //************** */
       .testimonial-name {
         font-size: 16px;
       }
@@ -215,6 +218,7 @@ section {
 
       // Serve a far emergere l'immagine principale con lo z-index
       position: absolute;
+
       z-index: 2;
     }
 
