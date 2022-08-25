@@ -12,7 +12,7 @@
         <!-- Content -->
         <BaseAllCourses :courses="courses" />
         <!-- Description -->
-        <div class="w-50 d-inline-block">
+        <div class="w-50 d-inline-block mb-5">
           Control your personal preference settings to get notified about appropriate courses.
           <a href="#" class="link">
             <div class="d-inline-block fw-bold">View all courses <i class="fa-solid fa-arrow-right-long"></i></div>
