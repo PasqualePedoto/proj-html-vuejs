@@ -38,6 +38,23 @@
             </div>
           </div>
         </div>
+        <!-- Set di Icon -->
+        <div>
+          <ul class="d-flex align-items-center">
+            <li class="me-3">
+              <a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+            </li>
+            <li class="me-3">
+              <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            </li>
+            <li class="me-3">
+              <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </li>
+            <li class="me-3">
+              <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
         <!-- Scritta riguardante il copyright -->
         <div class="col-12 text-center copyright mt-5"><i class="fa-solid fa-copyright me-2"></i>2020 Maxcoach. All Rights Reserved</div>
       </div>
