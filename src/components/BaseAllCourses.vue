@@ -4,7 +4,7 @@
       <BaseCard v-for="(item, i) in courses" :key="i" :item="item" type="course" />
     </div>
     <div class="d-flex align-items-center justify-content-center pb-5 pt-5">
-      <button class="circle me-3" @click="changeCourse"></button>
+      <button class="circle active me-3" @click="changeCourse"></button>
       <button class="circle me-3" @click="changeCourse"></button>
       <button class="circle me-3" @click="changeCourse"></button>
       <button class="circle me-3" @click="changeCourse"></button>
