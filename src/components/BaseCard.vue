@@ -18,7 +18,7 @@
         <div>{{ item.subtitle }}</div>
       </div>
       <!-- Element Description -->
-      <div class="desc">{{ item.description }}</div>
+      <div class="desc" :class="{ 'course-desc': type === 'course' }">{{ item.description }}</div>
       <!-- Elementi propri del corso -->
       <div v-if="type === 'course'" class="course-info d-flex align-items-center">
         <div class="me-3"><i class="fa-solid fa-file-lines me-2"></i>{{ item.numberLessons }} Lessons</div>
@@ -49,6 +49,9 @@ export default {
 .card {
   // Diamo un po d'aria
   margin: 10px;
+
+  // Puntatore
+  cursor: pointer;
 
   // Un po di ombreggiatura
   box-shadow: 4px 6px 6px #dedede;
@@ -86,5 +89,10 @@ export default {
       color: #2fab97;
     }
   }
+}
+
+// Effetto di Hover SOLO sulla course card
+.card:hover .course-desc {
+  color: #2fab97;
 }
 </style>
