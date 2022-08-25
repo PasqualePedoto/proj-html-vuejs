@@ -41,16 +41,16 @@
         <!-- Set di Icon -->
         <div>
           <ul class="d-flex align-items-center">
-            <li class="me-3">
+            <li class="me-4">
               <a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
             </li>
-            <li class="me-3">
+            <li class="me-4">
               <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
             </li>
-            <li class="me-3">
+            <li class="me-4">
               <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
             </li>
-            <li class="me-3">
+            <li class="me-4">
               <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
             </li>
           </ul>

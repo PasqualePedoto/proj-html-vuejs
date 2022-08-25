@@ -23,20 +23,56 @@
                 <!-- ******************* -->
                 <!-- Immagine principale della sezione -->
                 <!-- ******************* -->
-                <figure>
+                <figure v-if="allInfo.section !== 'testimonials'">
                   <img :src="allInfo.image" alt="photo" :class="{ 'w-auto': allInfo.section === 'free-guide' }" />
                 </figure>
+                <!-- Immagine dei testimonials creata a mano perchè non trovavo la foto -->
+                <div v-else class="testimonials-block">
+                  <!-- Foglio sottostante sfocato -->
+                  <div class="sheet-below d-flex flex-column px-2 py-1">
+                    <div class="h6 fw-bold flex-shrink-0 testimonial-title mb-4">The MaxCoach team works really hard to ensure high level of quality</div>
+                    <p class="flex-grow-1 testimonial-desc">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae officia impedit provident! Id cupiditate ipsa officia praesentium dolore rem explicabo ullam voluptates fugiat
+                      eum? Quod eum eaque sapiente cumque. Illo?
+                    </p>
+                    <div class="d-flex">
+                      <div class="figure flex-shrink-0 me-3">
+                        <img :src="grafic[5].src" :alt="grafic[5].image" />
+                      </div>
+                      <div>
+                        <h5 class="mb-3 testimonial-name">MINA HOLLACE</h5>
+                        <p class="testimonial-work">/ Freelancer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Foglio sovrastante -->
+                  <div class="sheet-above">
+                    <div class="h6 fw-bold flex-shrink-0 testimonial-title mb-4">Professional team of specialists and passionate mentors at reach</div>
+                    <p class="flex-grow-1 testimonial-desc">
+                      I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.
+                    </p>
+                    <div class="d-flex">
+                      <div class="figure flex-shrink-0 me-3">
+                        <img :src="grafic[6].src" :alt="grafic[6].image" />
+                      </div>
+                      <div>
+                        <h5 class="mb-3 testimonial-name">MADLEY PONDOR</h5>
+                        <p class="testimonial-work">/ IT Specialist</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- * Effetti grafici sull'immagine principale -->
                 <!-- Circle -->
-                <figure class="grafic-image blue-ring">
+                <figure class="grafic-image blue-ring" v-if="allInfo.section !== 'testimonials'">
                   <img :src="grafic[1].src" :alt="grafic[1].image" />
                 </figure>
                 <!-- Square: In base al posizionamento del testo cambiamo il posizionamento della grafica -->
-                <figure class="grafic-image left-square" :class="{ 'right-square': direction % 2 === 1 }">
+                <figure class="grafic-image left-square" :class="{ 'right-square': direction % 2 === 1 }" v-if="allInfo.section !== 'testimonials'">
                   <img :src="grafic[3].src" :alt="grafic[3].image" />
                 </figure>
                 <!-- Hexagon: In base al posizionamento del testo cambiamo il posizionamento della grafica -->
-                <figure class="grafic-image right-hexagon" :class="{ 'left-hexagon': direction % 2 === 1 }">
+                <figure class="grafic-image right-hexagon" :class="{ 'left-hexagon': direction % 2 === 1 }" v-if="allInfo.section !== 'testimonials'">
                   <img :src="grafic[2].src" :alt="grafic[2].image" />
                 </figure>
                 <!-- Gray Cloud: In base alla sezione cambiamo il posizionamento della nuvoletta -->
@@ -117,6 +153,61 @@ section {
   // Diamo un'altezza fissa alle figure di fianco alle descrizioni
   .block-image {
     height: 400px;
+
+    // Blocco che serve a rappresentare l'immagine della section Testimonials
+    .testimonials-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .testimonial-name {
+        font-size: 16px;
+      }
+
+      .testimonial-work,
+      .testimonial-desc {
+        font-size: 12px;
+      }
+
+      .figure {
+        width: 30px;
+        height: 30px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      // Foglio che verrà oscurato da quello posto sopra
+      .sheet-below {
+        width: 400px;
+        height: 450px;
+
+        // Diamo un po di ombreggiatura
+        box-shadow: 4px 5px 5px #c2bfbf;
+
+        // Usiamo questo filtro per sfocare il blocco sottostante
+        filter: opacity(0.2);
+      }
+
+      // Foglio che si sovrapporrà a quello sottostante
+      .sheet-above {
+        width: 550px;
+        height: 280px;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+
+        background-color: #fff;
+
+        // Diamo un po di ombreggiatura
+        box-shadow: 4px 5px 5px #c2bfbf;
+
+        position: absolute;
+      }
+    }
 
     // Facciamo in modo che il figure segua il suo contenitore in altezza
     figure {

@@ -224,6 +224,14 @@ export default {
           image: "svg-0",
           src: `${require("./assets/svg/svg-0.svg")}`,
         },
+        {
+          image: "mina-hollace",
+          src: `${require("./assets/images/testimonial-avata-02.jpg")}`,
+        },
+        {
+          image: "boy",
+          src: `${require("./assets/images/testimonial-avata-01.jpg")}`,
+        },
       ],
 
       // Dati per le cards dei Blogs
