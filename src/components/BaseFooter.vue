@@ -58,7 +58,9 @@
         <!-- Scritta riguardante il copyright -->
         <div class="col-12 text-center copyright mt-5"><i class="fa-solid fa-copyright me-2"></i>2020 Maxcoach. All Rights Reserved</div>
         <!-- Freccetta verso l'alto -->
-        <div class="up-arrow"><i class="fa-solid fa-arrow-up"></i></div>
+        <a href="#">
+          <div class="up-arrow"><i class="fa-solid fa-arrow-up"></i></div>
+        </a>
       </div>
     </div>
   </footer>
