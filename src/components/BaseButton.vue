@@ -1,6 +1,6 @@
 <template>
   <button :class="color">
-    <div class="button-in">{{ text }} <i class="fa-solid fa-arrow-right ms-2" v-show="section !== 'newsletter'"></i></div>
+    <div class="button-in hover-btn-jumbo h-100">{{ text }} <i class="fa-solid fa-arrow-right ms-2" v-show="section !== 'newsletter'"></i></div>
   </button>
 </template>
 
@@ -48,5 +48,11 @@ button {
   .button-in {
     padding: 12px;
   }
+}
+
+// Effetto di Hover sul Button
+button:hover .hover-btn-jumbo {
+  background-color: #2fab97;
+  color: white;
 }
 </style>
