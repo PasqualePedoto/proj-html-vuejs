@@ -1,14 +1,16 @@
 <template>
   <div>
+    <!-- All Courses Card -->
     <div class="d-flex align-items-center justify-content-center">
       <BaseCard v-for="(item, i) in courses" :key="i" :item="item" type="course" />
     </div>
+    <!-- Pallini che dovrebbero fungere da carosello ma non funzionanti -->
     <div class="d-flex align-items-center justify-content-center pb-5 pt-5">
-      <button class="circle active me-3" @click="changeCourse"></button>
-      <button class="circle me-3" @click="changeCourse"></button>
-      <button class="circle me-3" @click="changeCourse"></button>
-      <button class="circle me-3" @click="changeCourse"></button>
-      <button class="circle me-3" @click="changeCourse"></button>
+      <button class="circle active me-3"></button>
+      <button class="circle me-3"></button>
+      <button class="circle me-3"></button>
+      <button class="circle me-3"></button>
+      <button class="circle me-3"></button>
     </div>
   </div>
 </template>
@@ -26,13 +28,12 @@ export default {
       activeCourse: 1,
     };
   },
-  methods: {
-    changeCourse() {},
-  },
 };
 </script>
 
 <style lang="scss" scoped>
+// Definiamo i cerchi che dovrebbero racchiudere
+// la logica del carosello
 .circle {
   border-radius: 50%;
   width: 15px;
@@ -44,6 +45,7 @@ export default {
   border: 0;
 }
 
+// Cerchio attivo
 .circle.active {
   background-color: black;
   width: 25px;

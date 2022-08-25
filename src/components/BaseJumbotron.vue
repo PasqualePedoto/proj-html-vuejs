@@ -41,15 +41,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// Definiamo lo sfondo del Jumbotron settando correttamente
+// le properties del bg
 .jumbo {
   background-image: url("../assets/images/home-3-hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
+  // Diamo un altezza fissa in modo da mostrare lo sfondo
   width: 100%;
   height: 700px;
 
+  // Posizioniamo a lato la barra degli strumenti
+  // Rifiniamo il blocco
   #settings {
     background-color: var(--secondary-color);
 

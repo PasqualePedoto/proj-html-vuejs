@@ -1,6 +1,8 @@
 <template>
   <div class="data-lesson">
+    <!-- Lesson Date -->
     <p class="number">{{ info.data }}</p>
+    <!-- Lesson Description -->
     <p class="desc">{{ info.description }}</p>
   </div>
 </template>
@@ -21,6 +23,7 @@ export default {
 
   font-weight: bold;
 
+  // Settiamo il numero e la descrizione
   .number {
     font-size: 30px;
     color: var(--primary-color);

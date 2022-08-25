@@ -1,8 +1,11 @@
 <template>
   <div>
+    <!-- Se è un Button -->
     <div v-if="link.type === 'button'">
-      <button :class="link.color" class="info-button">{{ link.text }}</button>
+      <BaseButton :class="link.color" :text="link.text" section="info" />
+      <!-- <button :class="link.color" class="info-button">{{ link.text }}</button> -->
     </div>
+    <!-- Se è un link -->
     <div v-else>
       <div v-if="link.desc !== ''" class="d-inline-block me-2">{{ link.desc }}</div>
       <a href="#" class="link">
@@ -13,11 +16,13 @@
 </template>
 
 <script>
+import BaseButton from "./BaseButton.vue";
 export default {
   name: "SectionLink",
   props: {
     link: Object,
   },
+  components: { BaseButton },
 };
 </script>
 

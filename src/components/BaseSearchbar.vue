@@ -25,10 +25,13 @@ form {
   div {
     background-color: var(--bgc-searchbar);
 
+    // Settiamo l'input azzerando i bordi e ponendo il bgc transaprent
     input {
       border: 0;
       background-color: transparent;
     }
+
+    // Settiamo il button
     button {
       border: 0;
 

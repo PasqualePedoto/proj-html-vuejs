@@ -29,6 +29,7 @@
                 </i></a
               >
               <a href="#"><i class="fa-regular fa-circle-user me-3"></i></a>
+              <!-- Componente: Searchbar composta da input e button -->
               <BaseSearchbar placeholder="Search..." />
             </nav>
           </div>
@@ -51,8 +52,10 @@ export default {
 
 <style lang="scss" scoped>
 header {
+  // BGC dell'Header
   background-color: var(--secondary-color);
 
+  // Effetto di hover sui link dell'Header
   li:hover a {
     color: var(--primary-color);
   }
@@ -62,7 +65,8 @@ header {
     height: 100px;
   }
 
-  // Posizioniamo il numero di elementi presenti nel carrello
+  // Posizioniamo il numero che porta il conto degli
+  // elementi presenti nel carrello
   nav .cart {
     background-color: var(--primary-color);
     color: var(--secondary-color);

@@ -43,10 +43,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// Colori
 .text-primary-color {
   color: var(--primary-color);
 }
 
+// Area dedicata al form dell'email
 .form {
   height: 50px;
 

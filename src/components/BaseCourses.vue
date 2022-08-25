@@ -35,10 +35,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// Settiamo il colore di alcune parole del titolo
 .text-primary-color {
   color: var(--primary-color);
 }
 
+// Creiamo il box-shadow
 .link {
   box-shadow: 1px 2px 2px #dedede;
 }

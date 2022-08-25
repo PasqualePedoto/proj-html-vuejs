@@ -3,7 +3,7 @@
     <div class="button-in hover-btn-jumbo h-100">
       {{ text }}
       <!-- Icona della freccia visibile solo se non ci troviamo nella sezione Newsletter oppure Header  -->
-      <i class="fa-solid fa-arrow-right ms-2" v-show="section !== 'newsletter' && section !== 'header'"></i>
+      <i class="fa-solid fa-arrow-right ms-2" v-show="section !== 'newsletter' && section !== 'header' && section !== 'info'"></i>
       <!-- Icona della lente di ingrandimento mostrata solo se il componente BaseButton -->
       <!-- E' definito nell Header -->
       <i class="fa-solid fa-magnifying-glass" v-show="section === 'header'"></i>
