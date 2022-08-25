@@ -13,8 +13,8 @@ export default {
 
 <style lang="scss" scoped>
 .label {
-  background-color: #ee7455;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 
   height: 40px;
 

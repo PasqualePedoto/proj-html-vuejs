@@ -1,5 +1,5 @@
 <template>
-  <div class="position-relative">
+  <div>
     <BaseHeader :headerLinks="headerLinks" class="header-position" />
     <BaseJumbotron :info="jumboInformations" />
     <BaseMain :blogs-card="blogsCard" :first-info="firstSectionsInfo" :second-info="secondSectionsInfo" :lessons-data="lessonsData" :grafic="graficImage" :courses="coursesData" />
@@ -49,7 +49,7 @@ export default {
             },
             {
               text: "Work Culture",
-              color: "green",
+              color: "primary-color",
             },
             {
               text: " at MaxCoach",
@@ -60,7 +60,7 @@ export default {
             type: "link",
             text: "Get Free Guide",
             desc: "Have questions?",
-            color: "bg-white green",
+            color: "bg color",
           },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
@@ -77,14 +77,14 @@ export default {
             },
             {
               text: "Upgrade Your Life",
-              color: "green",
+              color: "primary-color",
             },
           ],
           link: {
             type: "link",
             text: "Download free guidebook",
             desc: "",
-            color: "bg-white black",
+            color: "bg black",
           },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
@@ -106,7 +106,7 @@ export default {
             },
             {
               text: "*Hearts*",
-              color: "green",
+              color: "primary-color",
             },
             {
               text: " Us?",
@@ -117,7 +117,7 @@ export default {
             type: "link",
             text: "View all",
             desc: "",
-            color: "bg-white black",
+            color: "bg black",
           },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
@@ -134,7 +134,7 @@ export default {
             },
             {
               text: "Transform",
-              color: "green",
+              color: "primary-color",
             },
             {
               text: " You!",
@@ -145,7 +145,7 @@ export default {
             type: "button",
             text: "Get Free Guide",
             desc: "",
-            color: "white bg-green",
+            color: "color bg",
           },
           paragraph:
             "Spend some time to visit our website or head office and discover our current courses,enrollment procedure,and registration deadline. We're opening new classes every beginning of each month",
@@ -283,6 +283,16 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/style.scss";
+
+// Definiamo le custom properties di cui avrò bisogno
+:root {
+  --primary-color: #ef6f31;
+  --secondary-color: #fff;
+  --bgc-searchbar: #f5f5f5;
+  --alternative-color: #2fab97;
+  --bgc-main: #f7f7f7;
+  --bgc-footer: #181621;
+}
 
 .header-position {
   position: sticky;

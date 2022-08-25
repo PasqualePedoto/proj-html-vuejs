@@ -4,7 +4,7 @@
       <!-- Title -->
       <div>
         <h1 class="d-inline-block me-2">Subscribe</h1>
-        <h1 class="d-inline-block text-green">Newsletter</h1>
+        <h1 class="d-inline-block text-primary-color">Newsletter</h1>
       </div>
       <!-- Paragraph -->
       <div>Enter your email address to register to our newsletter subscription delivered on a regular basis!</div>
@@ -17,7 +17,7 @@
         <!-- Email form -->
         <div class="form d-flex align-items-center justify-content-center">
           <input type="email" placeholder="Enter your email" />
-          <BaseButton text="Subscribe" section="newsletter" class="p-0" color="bg-green white" />
+          <BaseButton text="Subscribe" section="newsletter" class="p-0" color="bg-primary-color secondary-color" />
         </div>
         <!-- Grafic -->
         <div>
@@ -43,15 +43,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.text-green {
-  color: #2fab97;
+.text-primary-color {
+  color: var(--primary-color);
 }
 
 .form {
   height: 50px;
 
   input {
-    background-color: #f7f7f7;
+    background-color: var(--bgc-main);
     border: 0;
     padding: 10px;
   }

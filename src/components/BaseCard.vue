@@ -20,7 +20,7 @@
       <!-- Element Description -->
       <div class="desc" :class="{ 'course-desc': type === 'course' }">{{ item.description }}</div>
       <!-- Elementi propri del corso -->
-      <div v-if="type === 'course'" class="course-info d-flex align-items-center">
+      <div v-if="type === 'course'" class="course-info d-flex align-items-center lessons">
         <div class="me-3"><i class="fa-solid fa-file-lines me-2"></i>{{ item.numberLessons }} Lessons</div>
         <div><i class="fa-regular fa-circle-user me-2"></i>{{ item.numberStudents }} Students</div>
       </div>
@@ -77,22 +77,22 @@ export default {
       font-weight: bold;
     }
 
+    .views-date,
     .subtitle,
-    .views-date {
-      color: gray;
+    .lessons {
       font-weight: normal;
       font-size: 12px;
     }
 
     // Cambiamo il colore del costo
     .cost {
-      color: #2fab97;
+      color: var(--primary-color);
     }
   }
 }
 
 // Effetto di Hover SOLO sulla course card
 .card:hover .course-desc {
-  color: #2fab97;
+  color: var(--primary-color);
 }
 </style>

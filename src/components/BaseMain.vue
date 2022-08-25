@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .gray-bg {
-  background-color: #f7f7f7;
+  background-color: var(--bgc-main);
 
   padding-top: 50px;
 }

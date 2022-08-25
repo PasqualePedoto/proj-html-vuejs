@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: white;
+  background-color: var(--secondary-color);
   figure {
     width: 130px;
     height: 100px;
@@ -60,8 +60,8 @@ header {
 
   // Posizioniamo il numero di elementi presenti nel carrello
   nav .cart {
-    background-color: #2fab97;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 
     width: 15px;
     height: 15px;

@@ -45,20 +45,20 @@ export default {
 // COLORI DEI LINKS E BUTTONS
 //************* */
 
-.white {
-  color: white;
+button.bg {
+  background-color: var(--primary-color);
 }
 
-.bg-white {
-  background-color: white;
+.link .bg {
+  background-color: var(--secondary-color);
 }
 
-.green {
-  color: #2fab97;
+button.color {
+  color: var(--secondary-color);
 }
 
-.bg-green {
-  background-color: #2fab97;
+.link .color {
+  color: var(--primary-color);
 }
 
 .black {

@@ -5,7 +5,7 @@
     <!-- Title -->
     <div class="h1">
       <div class="d-inline-block me-2">Latest From</div>
-      <div class="d-inline-block text-green">Our Blogs</div>
+      <div class="d-inline-block text-primary-color">Our Blogs</div>
     </div>
     <!-- Blogs cards -->
     <div class="d-flex align-content-center justify-content-center mt-5">
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.text-green {
-  color: #2fab97;
+.text-primary-color {
+  color: var(--primary-color);
 }
 </style>

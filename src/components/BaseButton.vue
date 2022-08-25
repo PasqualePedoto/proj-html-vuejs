@@ -1,6 +1,13 @@
 <template>
   <button :class="color">
-    <div class="button-in hover-btn-jumbo h-100">{{ text }} <i class="fa-solid fa-arrow-right ms-2" v-show="section !== 'newsletter'"></i></div>
+    <div class="button-in hover-btn-jumbo h-100">
+      {{ text }}
+      <!-- Icona della freccia visibile solo se non ci troviamo nella sezione Newsletter oppure Header  -->
+      <i class="fa-solid fa-arrow-right ms-2" v-show="section !== 'newsletter' && section !== 'header'"></i>
+      <!-- Icona della lente di ingrandimento mostrata solo se il componente BaseButton -->
+      <!-- E' definito nell Header -->
+      <i class="fa-solid fa-magnifying-glass" v-show="section === 'header'"></i>
+    </div>
   </button>
 </template>
 
@@ -18,20 +25,31 @@ export default {
 <style lang="scss" scoped>
 // Modelliamo i colori del il button
 
-.bg-green {
-  background-color: #2fab97;
+// * Colore principale: BG E COLOR
+.bg-primary-color {
+  background-color: var(--primary-color);
 }
 
-.green {
-  color: #2fab97;
+.primary-color {
+  color: var(--primary-color);
 }
 
-.bg-white {
-  background-color: #fff;
+// * Colore alternativo: BG E COLOR
+.bg-alternative-color {
+  background-color: var(--alternative-color);
 }
 
-.white {
-  color: white;
+.alternative-color {
+  color: var(--alternative-color);
+}
+
+// * Colore secondario: BG E COLOR
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
 }
 
 // Modelliamo il button
@@ -52,7 +70,7 @@ button {
 
 // Effetto di Hover sul Button
 button:hover .hover-btn-jumbo {
-  background-color: #2fab97;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 </style>

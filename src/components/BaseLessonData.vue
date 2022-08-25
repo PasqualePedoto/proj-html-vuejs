@@ -23,7 +23,7 @@ export default {
 
   .number {
     font-size: 30px;
-    color: #2fab97;
+    color: var(--primary-color);
   }
 
   .desc {

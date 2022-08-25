@@ -142,8 +142,8 @@ section {
     justify-content: center;
 
     // Modelliamo i colori
-    .green {
-      color: #2fab97;
+    .primary-color {
+      color: var(--primary-color);
     }
 
     .black {

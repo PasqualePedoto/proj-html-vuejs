@@ -12,7 +12,7 @@
                 <!-- Title -->
                 <h1 class="text-white">{{ info.title }}</h1>
                 <!-- Button -->
-                <BaseButton :text="info.buttonText" color="bg-white green" />
+                <BaseButton :text="info.buttonText" color="bg-secondary-color primary-color" />
                 <!-- Barra degli strumenti posta in position absolute -->
                 <div id="settings" class="d-flex flex-column">
                   <i class="fa-solid fa-ruler-combined mb-2"></i>
@@ -51,7 +51,7 @@ export default {
   height: 700px;
 
   #settings {
-    background-color: #fff;
+    background-color: var(--secondary-color);
 
     position: absolute;
     top: 20%;

@@ -74,7 +74,7 @@ export default {
 <style lang="scss" scoped>
 footer {
   // Definiamo il bg del Footer
-  background-color: #181621;
+  background-color: var(--bgc-footer);
 
   // Diamo un po d'aria
   padding: 50px 0;

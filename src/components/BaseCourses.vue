@@ -7,7 +7,7 @@
         <!-- Title -->
         <div class="h1">
           Latest Online
-          <div class="text-green d-inline h1">Courses</div>
+          <div class="text-primary-color d-inline h1">Courses</div>
         </div>
         <!-- Content -->
         <BaseAllCourses :courses="courses" />
@@ -35,8 +35,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.text-green {
-  color: #2fab97;
+.text-primary-color {
+  color: var(--primary-color);
 }
 
 .link {
