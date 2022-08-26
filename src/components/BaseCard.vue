@@ -9,7 +9,7 @@
     <!-- Card Description -->
     <div class="card-element">
       <!-- Course Element -->
-      <div v-if="type === 'course'" class="cost">
+      <div v-if="item.type === 'course'" class="cost">
         <div class="d-inline-block">{{ item.cost.int }}</div>
         <div class="decimal d-inline-block">.{{ item.cost.dec }}</div>
       </div>
@@ -18,14 +18,14 @@
         <div>{{ item.subtitle }}</div>
       </div>
       <!-- Element Description -->
-      <div class="desc" :class="{ 'course-desc': type === 'course' }">{{ item.description }}</div>
+      <div class="desc" :class="{ 'course-desc': item.type === 'course' }">{{ item.description }}</div>
       <!-- Elementi propri del corso -->
-      <div v-if="type === 'course'" class="course-info d-flex align-items-center lessons">
+      <div v-if="item.type === 'course'" class="course-info d-flex align-items-center lessons">
         <div class="me-3"><i class="fa-solid fa-file-lines me-2"></i>{{ item.numberLessons }} Lessons</div>
         <div><i class="fa-regular fa-circle-user me-2"></i>{{ item.numberStudents }} Students</div>
       </div>
       <!-- Elementi propri del post sul Blog -->
-      <div v-if="type === 'blogs'" class="d-flex align-items-center views-date">
+      <div v-if="item.type === 'blog'" class="d-flex align-items-center views-date">
         <div class="me-3"><i class="fa-solid fa-calendar-days me-2"></i>{{ item.date }}</div>
         <div><i class="fa-solid fa-eye me-2"></i>{{ item.views }}</div>
       </div>
@@ -39,7 +39,6 @@ export default {
   name: "BaseCard",
   props: {
     item: Object,
-    type: String,
   },
   components: { BaseLabel },
 };

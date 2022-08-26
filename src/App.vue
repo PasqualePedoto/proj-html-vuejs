@@ -171,6 +171,7 @@ export default {
       // Dati dei corsi
       coursesData: [
         {
+          type: "course",
           src: `${require("./assets/images/course-02-480x298.jpg")}`,
           description: "Learning to Write as a Professional Author",
           cost: {
@@ -181,6 +182,7 @@ export default {
           numberStudents: 50,
         },
         {
+          type: "course",
           src: `${require("./assets/images/stock-full-hd-03-480x298.jpg")}`,
           description: "Costumer-centric Info-Tech Strategies",
           cost: {
@@ -191,6 +193,7 @@ export default {
           numberStudents: 769,
         },
         {
+          type: "course",
           src: `${require("./assets/images/stock-full-hd-04-480x298.jpg")}`,
           description: "Open Programming Courses for Everyone:Python",
           cost: {
@@ -237,6 +240,7 @@ export default {
       // Dati per le cards dei Blogs
       blogsCard: [
         {
+          type: "blog",
           src: `${require("./assets/images/artist-blog-03-480x325.jpeg")}`,
           subtitle: "ARTIST",
           description: "Brush Strokes Energize Trees in Paintings",
@@ -244,6 +248,7 @@ export default {
           views: 688,
         },
         {
+          type: "blog",
           src: `${require("./assets/images/artist-blog-01-480x325.jpg")}`,
           subtitle: "ARTIST",
           description: "Pocket-Sized Notebooks Hold Miniature Paintings",
@@ -251,6 +256,7 @@ export default {
           views: 603,
         },
         {
+          type: "blog",
           src: `${require("./assets/images/artist-blog-02-480x325.jpg")}`,
           subtitle: "ARTIST",
           description: "Connection Between Self-Portraits and Identity",

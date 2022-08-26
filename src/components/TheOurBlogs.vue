@@ -9,7 +9,7 @@
     </div>
     <!-- Blogs cards -->
     <div class="d-flex align-content-center justify-content-center mt-5">
-      <BaseCard v-for="(card, i) in blogsCard" :key="i" :item="card" type="blogs" />
+      <BaseCard v-for="(card, i) in blogsCard" :key="i" :item="card" />
     </div>
   </div>
 </template>

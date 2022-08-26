@@ -2,7 +2,7 @@
   <div>
     <!-- All Courses Card -->
     <div class="d-flex align-items-center justify-content-center">
-      <BaseCard v-for="(item, i) in courses" :key="i" :item="item" type="course" />
+      <BaseCard v-for="(item, i) in courses" :key="i" :item="item" />
     </div>
     <!-- Pallini che dovrebbero fungere da carosello ma non funzionanti -->
     <div class="d-flex align-items-center justify-content-center pb-5 pt-5">
